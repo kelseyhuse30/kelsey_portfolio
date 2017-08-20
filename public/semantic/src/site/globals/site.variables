@@ -13,5 +13,5 @@
 @secondaryColor: rgb(218,156,63);
 
 //Fonts
-@fontName: 'Rubik';
+@fontName: 'Kanit:thin';
 @linkColor: rgb(154, 42, 45);
