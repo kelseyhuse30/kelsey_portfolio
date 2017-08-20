@@ -14,4 +14,4 @@
 
 //Fonts
 @fontName: 'Rubik';
-@linkColor: @red;
+@linkColor: rgb(154, 42, 45);
