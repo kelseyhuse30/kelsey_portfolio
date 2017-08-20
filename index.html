@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Kelsey Huse</title>
+		<link rel="stylesheet" href="./custom.css">
+		<link rel="stylesheet" href="./semantic/dist/semantic.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	</head>
+	<body>
+		
+<!-- 		sidebar menu -->
+		<div class="ui thin sidebar vertical menu">
+			<a class="active item" href="./index.html">Home</a>
+			<a class="item" href="./about.html">About</a>
+			<a class="item" href="./projects.html">Projects</a>
+			<a class="item" href="./goals.html">Goals</a>
+			<a class="item" href="./inspiration.html">Inspiration</a>
+			<a class="item" href="./contact.html">Contact</a>
+		</div>
+
+<!-- 		header -->
+		<div class="ui very basic segment" id="header">
+			<h1 class="ui red header">
+				<i class="sidebar icon" id="menu-opener"></i>
+				<div class="content">
+					KELSEY HUSE
+				</div>
+				<div class="ui divider"></div>
+			</h1>
+		</div>
+		
+<!-- 		landing info -->
+		<div class="ui container">
+			<div class="ui equal width relaxed grid">
+				<div class="row">
+					<div class="column">
+						<h2 class="ui blue header">Hey there!</h2>
+						<h4 class="ui blue header">
+						<p>Thanks for visiting my website.</p>
+						<p>I put this together so that you can learn a little about me.  Want to know more? Send me an email! Here's some content that would make me happy:</p>
+						<ul>
+							<li>Invite to get <i class="coffee icon"></i></li>
+							<li>Link to a song on <i class="spotify icon"></i></li>
+							<li><i class="laptop icon"></i>Job opportunities</li>
+							<li>Proposal to work on a project together<i class="github alternate icon"></i></li>
+							<li><i class="find icon"></i>Suggesting something to add to my Philly Bucketlist</li>
+							<li>Articles/thoughts about educating youth<i class="child icon"></i>about tech</li>
+							<li>Invite to <i class="meetup icon"></i>and events in Philly</li>
+							<li><i class="comment outline icon"></i>Feedback on this site</li>
+						</ul>
+						</h4>
+						<button class="ui basic yellow button">
+						  <i class="envelope icon"></i>
+						  <a href="mailto:kelseyhuse30@gmail.com">
+						  Email me
+						  </a>
+						</button>
+						<button class="ui basic yellow button">
+						  <i class="download icon"></i>
+						  <a href="Huse_Resume.pdf" download>
+						  Download Resume
+						  </a>				
+						</button>
+					</div>
+					<div class="column">
+						<div class="ui medium image">
+							<img src="./img/magicgarden.jpg" alt="Kelsey Huse with mosaic">
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+<!-- 		end landing info -->
+
+			<div class="ui divider"></div>
+			<h4 class="ui center aligned blue header">
+			This site was built with html, semantic-ui+less+gulp, and a little bit of jquery.
+			<br>Philadelphia, Pennsylvania
+			<br>© 2017 Kelsey Huse</h4>
+	
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+
+	  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+
+	  <script>
+	  	$('#menu-opener').click(function() {
+	  		$('.ui.sidebar.menu').sidebar('toggle');
+	  	})
+	  	$('a.item').click(function() {
+	  		$('.ui.sidebar.menu').sidebar('toggle');
+	  	})
+	  	$('.special.cards .image').dimmer({
+			  on: 'hover'
+			});
+	  </script>
+
+	  <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-104880863-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+	</body>
+</html>

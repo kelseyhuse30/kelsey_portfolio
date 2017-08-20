@@ -1,0 +1,237 @@
+<html>
+	<head>
+		<title>Kelsey Huse</title>
+		<link rel="stylesheet" href="./custom.css">
+		<link rel="stylesheet" href="./semantic/dist/semantic.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	</head>
+	<body>
+		
+<!-- 		sidebar menu -->
+		<div class="ui thin sidebar vertical menu">
+			<a class="active item" href="./index.html">Home</a>
+			<a class="item" href="./about.html">About</a>
+			<a class="item" href="./projects.html">Projects</a>
+			<a class="item" href="./goals.html">Goals</a>
+			<a class="item" href="./inspiration.html">Inspiration</a>
+			<a class="item" href="./contact.html">Contact</a>
+		</div>
+
+<!-- 		header -->
+		<div class="ui very basic segment" id="header">
+			<h1 class="ui red header">
+				<i class="sidebar icon" id="menu-opener"></i>
+				<div class="content">
+					KELSEY HUSE
+				</div>
+				<div class="ui divider"></div>
+			</h1>
+		</div>
+
+<!-- 		Projects section	 -->		
+		<div class="ui very basic segment" id="projects">
+			<div class="ui horizontal divider">
+				<h1 class="ui red header">PROJECTS</h1>
+			</div>
+			<h1 class="ui green centered header">Technologies I use</h1>
+			<h2 class="ui green centered header">
+				<i class="devicon-babel-plain"></i>
+				<i class="devicon-bower-plain"></i>
+				<i class="devicon-css3-plain"></i>
+				<i class="devicon-git-plain"></i>
+				<i class="devicon-github-plain"></i>
+				<i class="devicon-gulp-plain"></i>
+				<i class="devicon-grunt-plain"></i>
+				<i class="devicon-heroku-plain"></i>
+				<i class="devicon-html5-plain"></i>
+				<i class="devicon-javascript-plain"></i>
+				<i class="devicon-jquery-plain"></i>
+				<i class="devicon-less-plain"></i>
+				<i class="devicon-postgresql-plain"></i>
+				<i class="devicon-rails-plain"></i>
+				<i class="devicon-react-plain"></i>
+				<i class="devicon-ruby-plain"></i>
+				<i class="devicon-sass-plain"></i>
+			</h2>
+			<div class="ui special stackable cards">
+<!-- 			PA Bill reader card -->
+			  <div class="card">
+			    <div class="blurring dimmable image">
+			      <div class="ui dimmer">
+			        <div class="content">
+			          <div class="center">
+			            <div class="ui inverted button"><a href="https://github.com/kelseyhuse30/pa_billreader" target="_blank">View on Github</a></div>
+			            <div class="ui inverted button"><a href="https://rubygems.org/gems/pa_billreader/versions/0.1.0" target="_blank">Download Gem</a></div>
+			            <div class="ui inverted button"><a href="https://medium.com/@kelseyhuse/gem-rat-b7b7847c8b18" target="_blank">Blog Post</a></div>
+			          </div>
+			        </div>
+			      </div>
+			      <img src="./img/pacapitol.jpg">
+			    </div>
+			    <div class="content">
+			      <a class="header">PA Bill Reader</a>
+			      <div class="meta">
+			        <span class="date">Created March 2017</span>
+			      </div>
+			      <div class="description">
+			      A Command Line Interface(CLI) program to view current bills for the 2017-2018 Regular Session in Pennsylvania.  I scraped the congress website using Nokogiri to navigate different css elements and display bill information on demand.
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <a>
+			        <i class="write icon"></i>
+			        Ruby, Nokogiri
+			      </a>
+			    </div>
+			  </div>
+<!-- 			end PA Bill reader card -->
+
+<!-- 			Bucketlist card -->
+			  <div class="card">
+			    <div class="blurring dimmable image">
+			      <div class="ui inverted dimmer">
+			        <div class="content">
+			          <div class="center">
+			            <div class="ui inverted button"><a href="https://github.com/kelseyhuse30/bucketlist" target="_blank">View on Github</a></div>
+			            <div class="ui inverted button"><a href="https://sinatra-bucketlist.herokuapp.com/" target="_blank">Demo</a></div>
+			            <div class="ui inverted button"><a href="https://medium.com/@kelseyhuse/bucketlist-6d2b65562a88" target="_blank">Blog Post</a></div>
+			          </div>
+			        </div>
+			      </div>
+			      <img src="./img/kickthebucket.jpg">
+			    </div>
+			    <div class="content">
+			      <a class="header">Bucketlist</a>
+			      <div class="meta">
+			        <span class="date">Created April 2017</span>
+			      </div>
+			      <div class="description">
+			      <p>A MVC app built with Ruby and Sinatra for REST routing.  Users can login and add items to their bucketlist.  Users who are not logged in can view items from all users to inspire them.</p>
+
+						<p>Built basic CRUD actions in controllers to manipulate bucketlist items, categories, and users.</p>
+
+						<p>Database includes has-many relationships with appropriate primary key/foreign key association.</p>
+
+						<p>Front end is simple HTML/CSS and Bootstrap.  My custom CSS is not loading from Heroku so I would appreciate some tips to get this working.</p>
+						</div>
+			    </div>
+			    <div class="extra content">
+			      <a>
+			        <i class="write icon"></i>
+			        HTML, CSS, Bootstrap, Ruby, Sinatra, ActiveRecord, PostgreSQL, Heroku
+			      </a>
+			    </div>
+			  </div>
+<!-- 			end Bucketlist card -->
+
+<!-- 			Drinkmaster card -->
+			  <div class="card">
+			    <div class="blurring dimmable image">
+			      <div class="ui inverted dimmer">
+			        <div class="content">
+			          <div class="center">
+			            <div class="ui button"><a href="https://github.com/kelseyhuse30/drinkmaster" target="_blank">View on Github</a></div>
+			            <div class="ui button"><a href="https://drinkmaster.herokuapp.com/" target="_blank">Demo</a></div>
+			            <div class="ui inverted button"><a href="https://medium.com/@kelseyhuse/completing-my-first-rails-app-5c287f19c44a" target="_blank">Blog Post</a></div>
+			          </div>
+			        </div>
+			      </div>
+			      <img src="./img/drinks.jpg">
+			    </div>
+			    <div class="content">
+			      <a class="header">Drinkmaster</a>
+			      <div class="meta">
+			        <span class="date">Created May 2017</span>
+			      </div>
+			      <div class="description">
+			      <p>Rails MVC app to track drink recipes.  Users can login with their Google account using OAuth, or create their own username/password.</p>
+			      <p>Created class methods on drink models to display non-alcoholic 'mocktails'.</p>
+			      <p>Utilized jQuery and AJAX to make requests for data asychronously to display recipes, rather than request a full page render.</p>
+			      <p>Front end created with basic HTML, CSS, and Bootstrap. Deployed on Heroku.</p>
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <a>
+			        <i class="write icon"></i>
+			        HTML, CSS, Bootstrap, jQuery, Javascript(ES6), Ruby, Rails, ActiveRecord, PostgreSQL, Google OAuth, Heroku
+			      </a>
+			    </div>
+			  </div>
+<!-- 			End drinkmaster card -->
+
+<!-- 			Teacher Dashboard card -->
+
+			  <div class="card">
+			    <div class="blurring dimmable image">
+			      <div class="ui inverted dimmer">
+			        <div class="content">
+			          <div class="center">
+			            <div class="ui inverted button"><a href="https://github.com/kelseyhuse30/teacher_dashboard" target="_blank">View on Github</a></div>
+			            <div class="ui inverted button"><a href="https://teacher-dashboard-kelsey.herokuapp.com/" target="_blank">Demo</a></div>
+			            <div class="ui inverted button"><a href="https://medium.com/@kelseyhuse/finishing-my-react-project-finally-c9656966fd8c" target="_blank">Blog Post</a></div>
+			          </div>
+			        </div>
+			      </div>
+			      <img src="./img/scratch.png">
+			    </div>
+			    <div class="content">
+			      <a class="header">Teacher Dashboard</a>
+			      <div class="meta">
+			        <span class="date">Created August 2017</span>
+			      </div>
+			      <div class="description">
+			      <p>I created this project to assign tasks to students while teaching and also display a countdown timer so that they know how much time they have to complete the tasks.</p>
+			      <p>The backend is a RESTful Rails API with a PostgreSQL database.</p>
+			      <p>Front end is HTML, CSS, Semantic-UI, React.js, and Redux to manage state.  State is persisted to the database to maintain state if the user exits the browser.</p>
+			      <p>I did not include user authentication in this app but stored the username entered in localStorage, which is accessed when the app loads to get that user's information for the app.</p>
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <a>
+			        <i class="write icon"></i>
+			        HTML, CSS, Semantic-UI, Javascript(ES6), React, Redux, Ruby, Rails, ActiveRecord, PostgreSQL, Heroku
+			      </a>
+			    </div>
+			  </div>
+<!-- 			End Teacher Dashboard card -->
+			</div>
+		</div>
+<!-- 		End Projects section	 -->
+			<div class="ui divider"></div>
+			<h4 class="ui center aligned blue header">
+			This site was built with html, semantic-ui+less+gulp, and a little bit of jquery.
+			<br>Philadelphia, Pennsylvania
+			<br>© 2017 Kelsey Huse</h4>
+	
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+
+	  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+
+	  <script>
+	  	$('#menu-opener').click(function() {
+	  		$('.ui.sidebar.menu').sidebar('toggle');
+	  	})
+	  	$('a.item').click(function() {
+	  		$('.ui.sidebar.menu').sidebar('toggle');
+	  	})
+	  	$('.special.cards .image').dimmer({
+			  on: 'hover'
+			});
+	  </script>
+
+	  <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-104880863-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+	</body>
+</html>		

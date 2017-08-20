@@ -1,0 +1,174 @@
+<html>
+	<head>
+		<title>Kelsey Huse</title>
+		<link rel="stylesheet" href="./custom.css">
+		<link rel="stylesheet" href="./semantic/dist/semantic.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	</head>
+	<body>
+		
+<!-- 		sidebar menu -->
+		<div class="ui thin sidebar vertical menu">
+			<a class="active item" href="./index.html">Home</a>
+			<a class="item" href="./about.html">About</a>
+			<a class="item" href="./projects.html">Projects</a>
+			<a class="item" href="./goals.html">Goals</a>
+			<a class="item" href="./inspiration.html">Inspiration</a>
+			<a class="item" href="./contact.html">Contact</a>
+		</div>
+
+<!-- 		header -->
+		<div class="ui very basic segment" id="header">
+			<h1 class="ui red header">
+				<i class="sidebar icon" id="menu-opener"></i>
+				<div class="content">
+					KELSEY HUSE
+				</div>
+				<div class="ui divider"></div>
+			</h1>
+		</div>
+
+<!-- 		Goals section	 -->		
+			<div class="ui very basic segment" id="goals">
+				<div class="ui horizontal divider">
+					<h1 class="ui red header">GOALS</h1>
+				</div>
+			</div>
+			<div class="ui container">
+			<table class="ui very basic collapsing celled table">
+  			<thead>
+		    	<tr><th>2017 Goal</th>
+		    	<th>Progress</th></tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>
+			        <h4 class="ui image header">
+			          <img src="./img/code.png" class="ui mini rounded image">
+			          <div class="content">
+			            Code For Philly project
+			        	</div>
+			      	</h4>
+			      </td>
+			      <td>
+			        Have been to several meetings but need to commit to joining a team and working on a project. <a href="https://codeforphilly.org/">Check out their website.</a>
+			      </td>
+			    </tr>
+			    <tr>
+			      <td>
+			        <h4 class="ui image header">
+			          <img src="./img/octocat.jpeg" class="ui mini rounded image">
+			          <div class="content">
+			            Build Github Portfolio
+			        	</div>
+			      	</h4>
+			      </td>
+			      <td>
+			        Originally I wanted to have one new project per month but I realized this isn't feasible. I'd rather focus on a few things and commit to deploying something valuable. <a href="https://github.com/kelseyhuse30/">Here's my porfolio.</a>
+			      </td>
+			    </tr>
+			    <tr>
+			      <td>
+			        <h4 class="ui image header">
+			          <img src="./img/books.png" class="ui mini rounded image">
+			          <div class="content">
+			            Read 30 books
+			        	</div>
+			      	</h4>
+			      </td>
+			      <td>
+			        Ahead of schedule, have read 21 as of August 2017! <a href="https://www.goodreads.com/user/show/35792434-kelsey-huse">Check my goodreads account.</a>
+			      </td>
+			    </tr>
+			    <tr>
+			      <td>
+			        <h4 class="ui image header">
+			          <img src="./img/donate.png" class="ui mini rounded image">
+			          <div class="content">
+			            Donate to charities
+			        	</div>
+			      	</h4>
+			      </td>
+			      <td>
+			        Was donating often until I decided to teach this summer and my income significantly decreased. <a href="https://www.donorschoose.org/">I love supporting teachers through Donors Choose.</a>
+			      </td>
+			    </tr>
+			    <tr>
+			      <td>
+			        <h4 class="ui image header">
+			          <img src="./img/weights.png" class="ui mini rounded image">
+			          <div class="content">
+			            Squat 250lb
+			        	</div>
+			      	</h4>
+			      </td>
+			      <td>
+			        I got to 215lb last summer, but ended my LA Fitness membership in May.  Have been focusing on running instead since it's free.  Thinking of joining a weight lifting or kickboxing gym soon.
+			      </td>
+			    </tr>
+			    <tr>
+			      <td>
+			        <h4 class="ui image header">
+			          <img src="./img/techgirlz.png" class="ui mini rounded image">
+			          <div class="content">
+			            Volunteer 1x /month
+			        	</div>
+			      	</h4>
+			      </td>
+			      <td>
+			        So far so good volunteering with TechGirlz! Summer has been slow but I signed up to teach a class in September. <a href="http://www.techgirlz.org/techshopz/">Check out events.</a>
+			      </td>
+			    </tr>
+			   	<tr>
+			      <td>
+			        <h4 class="ui image header">
+			          <img src="./img/ben.png" class="ui mini rounded image">
+			          <div class="content">
+			            Philly Bucketlist
+			        	</div>
+			      	</h4>
+			      </td>
+			      <td>
+			        Haven't kept track of the exact number but have crossed off a lot this year and always trying new things whether they're on the list or not.  Would like to make this into an app.
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+			</div>
+<!-- 		End Goals section	 -->		
+
+			<div class="ui divider"></div>
+			<h4 class="ui center aligned blue header">
+			This site was built with html, semantic-ui+less+gulp, and a little bit of jquery.
+			<br>Philadelphia, Pennsylvania
+			<br>© 2017 Kelsey Huse</h4>
+	
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+
+	  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+
+	  <script>
+	  	$('#menu-opener').click(function() {
+	  		$('.ui.sidebar.menu').sidebar('toggle');
+	  	})
+	  	$('a.item').click(function() {
+	  		$('.ui.sidebar.menu').sidebar('toggle');
+	  	})
+	  </script>
+
+	  <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-104880863-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+	</body>
+</html>
