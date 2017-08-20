@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+//List icon item
+@itemLinkIconColor: @red;

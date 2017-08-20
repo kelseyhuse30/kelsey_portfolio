@@ -1,0 +1,17 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+//Colors
+@yellow: rgb(218,156,63);
+@green: rgb(39, 100, 83);
+@red: rgb(154, 42, 45);
+@grey: rgb(156, 175, 172);
+@blue: rgb(45, 49, 83);
+
+@primaryColor: rgb(39, 100, 83);
+@secondaryColor: rgb(218,156,63);
+
+//Fonts
+@fontName: 'Rubik';
+@linkColor: @red;
