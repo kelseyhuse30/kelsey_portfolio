@@ -3,6 +3,8 @@
 		<title>Contact</title>
 		<link rel="stylesheet" href="./semantic/dist/semantic.min.css">
 		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.10.0/css/alertify.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.10.0/css/themes/semantic.min.css"/>
 	</head>
 	<body>
 		
@@ -28,12 +30,48 @@
 		</div>
 
 <!-- 		Contact section	 -->		
-			<div class="ui very basic segment" id="contact">
+<div class="ui very basic segment" id="contact">
+	<form class="ui form" id="contact-form">
+		<div class="ui two column centered grid">
+			<div class="four column centered row">
+				<div class="column">
+					<div class="field">
+  					<label for="name">Name</label>
+		    		<div class="ui input">
+		    			<input id = "inputName" type="text" name="name">
+		    		</div>
+	    		</div>
+	    	</div>
+				<div class="column">
+					<div class="field">
+			    	<label for="_replyto">Email</label>
+			    	<div class="ui input">
+				    	<input id="inputEmail" type="email" name="_replyto">
+				    </div>
+			    </div>
+				</div>
+			</div>
+			<div class="column">
+		    <div class="field">
+		    	<label for="message">Message</label>
+		    	<div class="ui input">
+			    	<textarea id="inputMessage" name="message"></textarea>
+			    </div>
+		    </div>
+			</div>
+			<div class="two column centered row">
+				<div class="column">
+					<input class="ui right floated large red button" type="submit" value="Send">
+				</div>
+			</div>
+		</div>
+		<input type="hidden" name="_subject" value="New email from kelseyhuse.com" />
+	</form>
 
 				<h2 class="ui center aligned blue header">
 				Thanks for visiting - feel free to reach out on social media to stay in touch!</h2>
 				<div class="ui centered grid">
-				<div class="ui six wide column centered">
+				<div class="ui four wide column centered">
 				<div class="ui huge horizontal link list">
 					<a class="item" href="https://twitter.com/kelseyhuse30" target="_blank"><i class="twitter icon"></i></a>
 					<a class="item" href="https://github.com/kelseyhuse30" target="_blank"><i class="Github icon"></i></a>
@@ -82,6 +120,8 @@
 	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	  crossorigin="anonymous"></script>
 
+	  <script src="https://cdn.jsdelivr.net/alertifyjs/1.10.0/alertify.min.js"></script>
+
 	  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
 
 	  <script>
@@ -101,6 +141,30 @@
 
 		  ga('create', 'UA-104880863-1', 'auto');
 		  ga('send', 'pageview');
+		</script>
+
+		<script>
+			$('#contact-form').submit(function(e) {
+				e.preventDefault();
+				var name = $('#inputName')[0];
+				var email = $('#inputEmail')[0];
+				var message = $('#inputMessage')[0];
+
+				if (!name.value || !email.value || !message.value) {
+						alertify.alert('Missing Information', 'Please fill out all fields before submitting.').show();
+					} else {
+						$.ajax({
+							url: 'https://formspree.io/kelseyhuse30@gmail.com',
+							method: "POST",
+							data: $(this).serialize(),
+							dataType: "json"
+						})
+						.done(function() {
+							alertify.success('Message sent')
+						})
+						$(this).get(0).reset()
+					}
+			})
 		</script>
 
 	</body>
